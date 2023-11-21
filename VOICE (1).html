@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<TITLE>员工建言行为调查</TITLE>
+<script language=javascript src="mlweb.js"></SCRIPT>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+</head>
+
+<body onLoad="timefunction('onload','body','body')">
+
+<!--BEGIN TABLE STRUCTURE-->
+<SCRIPT language="javascript">
+//override defaults
+mlweb_outtype="CSV";
+mlweb_fname="mlwebform";
+tag = "LIS^HLS`"
+ + "CV^YV";
+
+txt = "这名下属与你有许多不同之处，例如，你们的老家是不同的地方，有不同的年龄和兴趣爱好，毕业于不同的学校等等。^这名下属与你有许多相似之处，例如，你们的老家是同一个地方，有相似的年龄和兴趣爱好，毕业于同一所学校等等。`"
+ + "我认为我们应该简化目前使用的模板文本，以便有更多时间打电话和帮助客户。我的想法是开发一个在线系统，我们可以输入所有相关的销售电话和客户数据，节约更多时间来满足客户需求。一个新的、精简的系统会让我们所有人的工作变得更高效。^我认为我们应该废除现在这个无效的模板文本，因为它限制了我们打电话和帮助客户的时间。我担心这个模板文本让我们很难快速输入销售电话的相关数据，并损害了我们满足客户需求的能力。我认为废除这个模板文本可以弥补它所造成的伤害。";
+
+state = "1^1`"
+ + "1^1";
+
+box = "与你的相似程度^与你的相似程度`"
+ + "可能改善团队运营的方式^可能损害团队运营的因素";
+
+CBCol = "1^1";
+CBRow = "0^0";
+W_Col = "200^200";
+H_Row = "200^200";
+
+chkchoice = "nobuttons";
+btnFlg = 0;
+btnType = "radio";
+btntxt = "";
+btnstate = "";
+btntag = "";
+to_email = "guoyudong@stu.sufe.edu.cn";
+colFix = false;
+rowFix = false;
+CBpreset = false;
+evtOpen = 0;
+evtClose = 0;
+chkFrm=true;
+warningTxt = "请完成所有问题";
+tmTotalSec = 60;
+tmStepSec = 1;
+tmWidthPx = 200;
+tmFill = true;
+tmShowTime = false;
+tmCurTime = 0;
+tmActive = false;
+tmDirectStart = true;
+tmMinLabel = "false";
+tmSecLabel = "secs";
+tmLabel = "Timer: ";
+
+//Delay: LIS HLS CV YV
+delay = "0^0^0^0`"
+ + "0^0^0^0`"
+ + "0^0^0^0`"
+ + "0^0^0^0";
+activeClass = "actTD";
+inactiveClass = "inactTD";
+boxClass = "boxTD";
+cssname = "mlweb.css";
+nextURL = "thanks.html";
+expname = "VOICE";
+randomOrder = true;
+recOpenCells = false;
+masterCond = 2;
+loadMatrices();
+</SCRIPT>
+<!--END TABLE STRUCTURE-->
+
+<FORM name="mlwebform" onSubmit="return checkForm(this)" method="POST" action="https://www.mouselabweb.org/mlwebmailer.php"><INPUT type=hidden name="procdata" value="">
+<input type=hidden name="subject" value="">
+<input type=hidden name="expname" value="">
+<input type=hidden name="nextURL" value="">
+<input type=hidden name="choice" value="">
+<input type=hidden name="condnum" value="">
+<input type=hidden name="to_email" value="">
+<!--BEGIN preHTML-->
+<style>
+    p {
+      text-indent: 20px; 
+      padding-left: 150px; 
+      padding-right: 150px; 
+    }
+  </style> 
+    
+          <p> <br><br><b>请想象如下情景</b>，你是一家保险公司销售团队的<b>领导者</b>，已经与同事一起工作了大约9个月。销售保险计划时，团队成员们通常使用公司提供的模板文本。
+            <br>在3个月前，团队开始使用一种新的模板文本。
+                             自从采用新模板文本以来，团队业绩受到了不良影响。现在，整个团队正在一起<b>讨论业绩下滑的问题</b>。
+
+                            <br><br> 下面是你与团队中某两位下属之间的相似程度，以及这两位下属的建议。
+
+                             <br><br>将鼠标移至 <b>灰色方块</b> 即可查看详细信息。
+                            <br></p>
+<!--END preHTML-->
+
+<style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  </style>
+<div class="container">
+<!-- MOUSELAB TABLE -->
+<TABLE border=1>
+<TR>
+<!--cell a0(tag:LIS)-->
+<TD align=center valign=middle><DIV ID="a0_cont" style="position: relative; height: 200px; width: 200px;"><DIV ID="a0_txt" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 1;"><TABLE><TD ID="a0_td" align=center valign=center width=195 height=195 class="actTD">这名下属与你有许多不同之处，例如，你们的老家是不同的地方，有不同的年龄和兴趣爱好，毕业于不同的学校等等。</TD></TABLE></DIV><DIV ID="a0_box" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 2;"><TABLE><TD ID="a0_tdbox" align=center valign=center width=195 height=195 class="boxTD">与你的相似程度</TD></TABLE></DIV><DIV ID="a0_img" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; z-index: 5;"><A HREF="javascript:void(0);" NAME="a0" onMouseOver="ShowCont('a0',event)" onMouseOut="HideCont('a0',event)"><IMG NAME="a0" SRC="transp.gif" border=0 width=200 height=200></A></DIV></DIV></TD>
+<!--end cell-->
+<!--cell a1(tag:HLS)-->
+<TD align=center valign=middle><DIV ID="a1_cont" style="position: relative; height: 200px; width: 200px;"><DIV ID="a1_txt" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 1;"><TABLE><TD ID="a1_td" align=center valign=center width=195 height=195 class="actTD">这名下属与你有许多相似之处，例如，你们的老家是同一个地方，有相似的年龄和兴趣爱好，毕业于同一所学校等等。</TD></TABLE></DIV><DIV ID="a1_box" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 2;"><TABLE><TD ID="a1_tdbox" align=center valign=center width=195 height=195 class="boxTD">与你的相似程度</TD></TABLE></DIV><DIV ID="a1_img" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; z-index: 5;"><A HREF="javascript:void(0);" NAME="a1" onMouseOver="ShowCont('a1',event)" onMouseOut="HideCont('a1',event)"><IMG NAME="a1" SRC="transp.gif" border=0 width=200 height=200></A></DIV></DIV></TD>
+<!--end cell--></TR><TR>
+<!--cell b0(tag:CV)-->
+<TD align=center valign=middle><DIV ID="b0_cont" style="position: relative; height: 200px; width: 200px;"><DIV ID="b0_txt" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 1;"><TABLE><TD ID="b0_td" align=center valign=center width=195 height=195 class="actTD">我认为我们应该简化目前使用的模板文本，以便有更多时间打电话和帮助客户。我的想法是开发一个在线系统，我们可以输入所有相关的销售电话和客户数据，节约更多时间来满足客户需求。一个新的、精简的系统会让我们所有人的工作变得更高效。</TD></TABLE></DIV><DIV ID="b0_box" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 2;"><TABLE><TD ID="b0_tdbox" align=center valign=center width=195 height=195 class="boxTD">可能改善团队运营的方式</TD></TABLE></DIV><DIV ID="b0_img" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; z-index: 5;"><A HREF="javascript:void(0);" NAME="b0" onMouseOver="ShowCont('b0',event)" onMouseOut="HideCont('b0',event)"><IMG NAME="b0" SRC="transp.gif" border=0 width=200 height=200></A></DIV></DIV></TD>
+<!--end cell-->
+<!--cell b1(tag:YV)-->
+<TD align=center valign=middle><DIV ID="b1_cont" style="position: relative; height: 200px; width: 200px;"><DIV ID="b1_txt" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 1;"><TABLE><TD ID="b1_td" align=center valign=center width=195 height=195 class="actTD">我认为我们应该废除现在这个无效的模板文本，因为它限制了我们打电话和帮助客户的时间。我担心这个模板文本让我们很难快速输入销售电话的相关数据，并损害了我们满足客户需求的能力。我认为废除这个模板文本可以弥补它所造成的伤害。</TD></TABLE></DIV><DIV ID="b1_box" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; clip: rect(0px 200px 200px 0px); z-index: 2;"><TABLE><TD ID="b1_tdbox" align=center valign=center width=195 height=195 class="boxTD">可能损害团队运营的因素</TD></TABLE></DIV><DIV ID="b1_img" STYLE="position: absolute; left: 0px; top: 0px; height: 200px; width: 200px; z-index: 5;"><A HREF="javascript:void(0);" NAME="b1" onMouseOver="ShowCont('b1',event)" onMouseOut="HideCont('b1',event)"><IMG NAME="b1" SRC="transp.gif" border=0 width=200 height=200></A></DIV></DIV></TD>
+<!--end cell--></TR></TABLE>
+<!-- END MOUSELAB TABLE -->
+
+</div>
+<style>
+    p {
+      padding-left: 150px; 
+      padding-right: 150px; 
+    }
+  </style> 
+  <p>
+<!--BEGIN postHTML-->
+1.你更愿意采纳哪位下属的建议
+<!-- Begin HTML Choice: name=choice-->
+<TABLE><TR><td align=center><INPUT TYPE=RADIO NAME='choice' VALUE='1' onClick="RecordEventData(this,event);" onMouseOver="RecordEventData(this,event);" onMouseOut="RecordEventData(this,event);"></td><TD align=left>我更愿意采纳下属A的建议</TD></TR><TR><td align=center><INPUT TYPE=RADIO NAME='choice' VALUE='2' onClick="RecordEventData(this,event);" onMouseOver="RecordEventData(this,event);" onMouseOut="RecordEventData(this,event);"></td><TD align=left>我更愿意采纳下属B的建议</TD></TR></TABLE>
+<!-- End HTML Choice: name=choice-->
+<br>
+  2.你采纳该下属建议的意愿程度是
+<!-- Begin HTML Scale: name=Endorsement-->
+<TABLE width=80%><TR><TD align=center>1</TD><TD align=center>2</TD><TD align=center>3</TD><TD align=center>4</TD><TD align=center>5</TD><TD align=center>6</TD><TD align=center>7</TD></TR><TR><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='1'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='2'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='3'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='4'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='5'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='6'></td><td width=14% align=center><INPUT TYPE=RADIO NAME='Endorsement' VALUE='7'></td></TR><TR><td align=center>非常小的可能</td><td align=center></td><td align=center></td><td align=center>中等程度的可能</td><td align=center></td><td align=center></td><td align=center>非常大的可能</td></TR></TABLE>
+<!-- End HTML Scale: name=Endorsement-->
+</p>
+
+<!--END postHTML--><INPUT type="submit" value="Next Page" onClick=timefunction('submit','submit','submit')></FORM></body></html>
